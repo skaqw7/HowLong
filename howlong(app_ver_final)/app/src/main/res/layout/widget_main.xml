@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:id="@+id/widgetLayout"
+    android:background="#00000000">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="15dp">
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="How  long?                           "
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="5dp"
+            android:textIsSelectable="false" />
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="프로세스가 실행 중입니다."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:singleLine="true"
+            android:textSize="12dp"
+            android:textColor="@android:color/darker_gray" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnExit"
+            android:layout_gravity="center_vertical"
+            android:src="@android:drawable/ic_delete"
+            android:background="#00000000" />
+    </LinearLayout>
+
+
+</LinearLayout>

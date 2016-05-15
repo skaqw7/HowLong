@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.namsoo.myslidingmenu">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+
+
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <receiver
+            android:name=".MyBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="VDS_BroadcastReceiver" />
+                <action android:name="VMS_BroadcastReceiver" />
+            </intent-filter>
+        </receiver>
+
+
+        <service
+            android:name=".GPSservice"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:label="GPS">
+                <action android:name="GPSservice_for" />
+            </intent-filter>
+        </service>
+
+
+        <service
+            android:name=".TTS"
+            android:exported="true" />
+
+        <service
+            android:name=".TTSVMS"
+            android:exported="true" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_splash_screen"
+            android:screenOrientation="portrait"
+            ></activity>
+
+        <activity
+            android:name=".PopUpActivity"
+            android:label="@string/title_activity_pop_up"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name=".PopUpCCTVActivity"
+            android:label="@string/title_activity_pop_up_cctv"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".PopUpVMSActivity"
+            android:label="@string/title_activity_pop_up"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog"/>
+
+        <activity
+            android:name=".MadeByActivity"
+            android:label="@string/title_activity_pop_up_en"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+
+
+        <service
+            android:name=".WidgetService"
+            android:screenOrientation="portrait"
+
+            android:enabled="true"
+            android:exported="true" />
+
+
+
+        <activity
+            android:name=".VMSPopUpActivity"
+            android:screenOrientation="portrait"
+
+            />
+
+        <activity android:name=".tutorial.ViewPagerStyle2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+
+
+
+
+        <activity
+            android:name=".LaughterTherapyActivity"
+            android:screenOrientation="portrait"
+
+            />
+    </application>
+
+</manifest>

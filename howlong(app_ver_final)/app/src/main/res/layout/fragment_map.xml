@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MapContainer2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff8400"
+    android:orientation="vertical">
+
+    <com.nhn.android.maps.NMapView
+        android:id="@+id/usermapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.nhn.android.maps.NMapView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="right">
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/btn_downCCTV"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#1E88E5"
+                android:text="하행CCTV" />
+
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/btn_upCCTV"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#1E88E5"
+                android:text="상행CCTV" />
+    </LinearLayout>
+
+</RelativeLayout>

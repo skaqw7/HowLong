@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">HowLong</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sliding_menu">SlidingMenu</string>
+    <string name="str_done">완료</string>
+    <string name="title_activity_pop_up">PopUpActivity</string>
+    <string name="title_activity_pop_up_cctv">PopUpCCTVActivity</string>
+    <string name="title_activity_pop_up_tutorial">TutorialActivity</string>
+    <string name="title_activity_pop_up_en">MadeByActivity</string>
+    <string name="title_splash_screen">SplashScreen</string>
+
+</resources>

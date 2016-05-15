@@ -1,0 +1,44 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_header_notifications">
+        <!-- A 'parent' preference, which enables/disables child preferences (below)
+             when checked/unchecked. -->
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="notifications_sound"
+            android:title="@string/pref_sound"
+            android:summary="정체시에 정보를 음성으로 알려줍니다."
+
+            />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="notifications_vibration"
+            android:title="@string/pref_vibration"
+            android:summary="정체시에 진동이 울립니다."/>
+
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_header_data_sync">
+
+        <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+             dismiss it. -->
+        <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+        <ListPreference
+            android:defaultValue="5"
+            android:entries="@array/pref_sync_frequency_titles"
+            android:entryValues="@array/pref_sync_frequency_values"
+            android:key="sync_frequency"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:summary="알림 주기를 설정합니다."
+            android:title="@string/pref_title_sync_frequency" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="고객지원">
+        <Preference android:title="@string/pref_tutorial"
+            android:key="info_tutorial"
+            android:summary="튜토리얼을 시작합니다."></Preference>
+        <Preference android:title="@string/Information_ensharp"
+            android:key="info_made"
+            android:summary="개발자 정보를 보여줍니다."></Preference>
+    </PreferenceCategory>
+</PreferenceScreen>
+
